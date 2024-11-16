@@ -1,0 +1,221 @@
+          <!DOCTYPE html>
+           <html lang="en">
+           <head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Student Survey Form</title>
+               <!-- Bootstrap CSS -->
+               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+               <style>
+                   body {
+                       background-color: #f7f7f7;
+                       font-family: 'Arial', sans-serif;
+                   }
+                   .container {
+                       background-color: white;
+                       margin-top: 50px;
+                       padding: 30px;
+                       border-radius: 10px;
+                       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                   }
+                   .header-section {
+                       background-color: #d2b48c; /* Light brown color */
+                       padding: 20px;
+                       border-radius: 10px 10px 0 0;
+                       color: white;
+                       text-align: center;
+                   }
+                   .header-section h2 {
+                       margin: 0;
+                       font-size: 24px;
+                   }
+                   .form-section {
+                       background-color: #f1f1f1;
+                       padding: 20px;
+                   }
+                   .form-label {
+                       font-weight: bold;
+                       margin-top: 10px;
+                   }
+                   .form-control, .form-select {
+                       border-radius: 6px;
+                       border: 1px solid #ced4da;
+                   }
+                   .form-check-label {
+                       margin-left: 5px;
+                   }
+                   .btn-submit, .btn-reset {
+                       padding: 10px 30px;
+                       border-radius: 6px;
+                       font-size: 16px;
+                   }
+                   .btn-submit {
+                       background-color: #28a745;
+                       color: white;
+                   }
+                   .btn-reset {
+                       background-color: #dc3545;
+                       color: white;
+                   }
+                   .form-check-inline {
+                       margin-right: 15px;
+                   }
+                   textarea.form-control {
+                       resize: none;
+                   }
+               </style>
+           </head>
+           <body>
+               <div class="container">
+                   <div class="header-section">
+                       <h2>Student Survey Form</h2>
+                   </div>
+                   <div class="form-section">
+                       <form action="#" method="post">
+                           <!-- First Name Field, user need to provide first name-->
+                           <div class="mb-3">
+                               <label for="first-name" class="form-label">First Name:</label>
+                               <input type="text" id="first-name" name="first-name" class="form-control" required>
+                           </div>
+                           
+                           <!-- Last Name Field, user need to provide last name -->
+                           <div class="mb-3">
+                               <label for="last-name" class="form-label">Last Name:</label>
+                               <input type="text" id="last-name" name="last-name" class="form-control" required>
+                           </div>
+           
+                           <!-- Street Address Field, user need to provide address -->
+                           <div class="mb-3">
+                               <label for="street-address" class="form-label">Street Address:</label>
+                               <input type="text" id="street-address" name="street-address" class="form-control" required>
+                           </div>
+           
+                           <!-- City Field, user need to provide city-->
+                           <div class="mb-3">
+                               <label for="city" class="form-label">City:</label>
+                               <input type="text" id="city" name="city" class="form-control" required>
+                           </div>
+           
+                           <!-- State and Zip Fields, user need to provide state and Zip-->
+                           <div class="row">
+                               <div class="col-md-6 mb-3">
+                                   <label for="state" class="form-label">State:</label>
+                                   <input type="text" id="state" name="state" class="form-control" required>
+                               </div>
+                               <div class="col-md-6 mb-3">
+                                   <label for="zip" class="form-label">Zip Code:</label>
+                                   <input type="text" id="zip" name="zip" class="form-control" required>
+                               </div>
+                           </div>
+           
+                           <!-- Telephone Field, user need to provide phone number -->
+                           <div class="mb-3">
+                               <label for="telephone" class="form-label">Telephone Number:</label>
+                               <input type="tel" id="telephone" name="telephone" class="form-control" required>
+                           </div>
+           
+                           <!-- Email Field, user need to provide email address -->
+                           <div class="mb-3">
+                               <label for="email" class="form-label">E-mail:</label>
+                               <input type="email" id="email" name="email" class="form-control" required>
+                           </div>
+           
+                           <!-- Date of Survey Field, user need to provide current date -->
+                           <div class="mb-3">
+                               <label for="survey-date" class="form-label">Date of Survey:</label>
+                               <input type="date" id="survey-date" name="survey-date" class="form-control" required>
+                           </div>
+           
+                           <!-- Liked Most Field, user need to provide what they liked most about the college -->
+                           <div class="mb-3">
+                               <label class="form-label">What did you like most about the campus?</label><br>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="checkbox" name="liked-most" value="students">
+                                   <label class="form-check-label">Students</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="checkbox" name="liked-most" value="location">
+                                   <label class="form-check-label">Location</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="checkbox" name="liked-most" value="campus">
+                                   <label class="form-check-label">Campus</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="checkbox" name="liked-most" value="atmosphere">
+                                   <label class="form-check-label">Atmosphere</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="checkbox" name="liked-most" value="dorm-rooms">
+                                   <label class="form-check-label">Dorm Rooms</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="checkbox" name="liked-most" value="sports">
+                                   <label class="form-check-label">Sports</label>
+                               </div>
+                           </div>
+           
+                           <!-- Interest Field, user need to provide how they got intrested in university-->
+                           <div class="mb-3">
+                               <label class="form-label">How did you become interested in our university?</label><br>
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="interest" value="friends">
+                                   <label class="form-check-label">Friends</label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="interest" value="television">
+                                   <label class="form-check-label">Television</label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="interest" value="internet">
+                                   <label class="form-check-label">Internet</label>
+                               </div>
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="interest" value="other">
+                                   <label class="form-check-label">Other</label>
+                               </div>
+                           </div>
+           
+                           <!-- Recommend Field, user need to provide they will suggest this school or not -->
+                           <div class="mb-3">
+                               <label for="recommend" class="form-label">Likelihood of recommending this school to others:</label>
+                               <select id="recommend" name="recommend" class="form-select" required>
+                                   <option value="" disabled selected>Select an option</option>
+                                   <option value="very-likely">Very Likely</option>
+                                   <option value="likely">Likely</option>
+                                   <option value="unlikely">Unlikely</option>
+                               </select>
+                           </div>
+           
+                           <!-- Raffle Field, user need to provide number to get a chance for a free movie ticket-->
+                           <div class="mb-3">
+                               <label for="raffle" class="form-label">Raffle (Enter at least 10 comma-separated numbers ranging from 1 to 100):</label>
+                               <input type="text" id="raffle" name="raffle" class="form-control" required>
+                           </div>
+           
+                           <!-- Comments Field, user need to provide any additional comments-->
+                           <div class="mb-3">
+                               <label for="comments" class="form-label">Additional Comments:</label>
+                               <textarea id="comments" name="comments" class="form-control" rows="4"></textarea>
+                           </div>
+           
+                           <!-- Buttons, user need to submit or cancel button-->
+                           <div class="d-flex justify-content-between">
+                               <button type="submit" class="btn btn-submit">Submit</button>
+                               <button type="reset" class="btn btn-reset">Cancel</button>
+                           </div>
+           
+                           <!--Simple footer for the copy rights-->
+                           <footer class="text-center mt-4">
+                               <p>Copyright © 2024. All Rights Reserved by Vamsi Krishna Maram</p>
+                           </footer>
+                           
+                       </form>
+                   </div>
+               </div>
+           
+               <!-- Bootstrap JS -->
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+           </body>
+           </html>
+           
